@@ -1,0 +1,21 @@
+{
+  "dockerComposeFile": ["../docker-compose.yml", "docker-compose.yml"],
+  "service": "rails",
+  "workspaceFolder": "/work",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "rebornix.ruby",
+        "davidlgoldberg.jumpy2",
+        "bung87.rails",
+        "castwide.solargraph",
+        "bbenoist.shell",
+        "mosapride.zenkaku",
+        "ryu1kn.partial-diff",
+        "donjayamanne.githistory",
+        "sirtobi.code-clip-ring",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  }
+}

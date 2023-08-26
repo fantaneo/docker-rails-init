@@ -1,0 +1,21 @@
+version: "3"
+services:
+  rails:
+    build: .
+    ports:
+      - "3000:3000"
+    tty: true
+    stdin_open: true
+    volumes:
+      - type: volume
+        source: bundle
+        target: /usr/local/bundle
+      - type: bind
+        source: ./
+        target: /work
+    environment:
+      BARISTAMEMBERMANAGEMENT_DATABASE_PASSWORD: "postgres"
+      SECRET_KEY_BASE: __some_random_string__
+      RAILS_SERVE_STATIC_FILES: "1"
+volumes:
+  bundle:
