@@ -4,8 +4,6 @@ services:
     build: .
     ports:
       - "3000:3000"
-    tty: true
-    stdin_open: true
     volumes:
       - type: volume
         source: bundle
